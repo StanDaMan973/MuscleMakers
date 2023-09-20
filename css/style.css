@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.workout {
+  background-image: url(/img/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-sidebar-graphic-art-image_1258-82968.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.workout .workout-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 11rem;
+  margin-left: 4rem;
+}
+
+.workout .workout-content .content-box {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.workout .workout-content .content-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 1.3em;
+}
+
+.workout .workout-content .content-box h1 {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 3.5rem;
+}
+
+.workout .workout-content .content-box .button {
+  font-family: "Poppins", sans-serif;
+  background: #000000;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
+.workout .workout-content .img-box img {
+  position: relative;
+  top: -140px;
+  right: 200px;
+  width: 850px;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  background: #000000;
+  padding: 3rem;
+  color: #ffffff;
+}
+
+footer .copyright {
+  width: 25%;
+  margin: 0 auto;
+}
+
+footer .copyright p {
+  text-align: center;
+}
