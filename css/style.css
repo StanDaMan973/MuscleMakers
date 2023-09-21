@@ -1,26 +1,26 @@
 .container {
-  width: 100%;
-  max-width: 1400px;
+  width: 80%;
   margin: 0 auto;
 }
 
 .workout {
-  background-image: url(/img/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-sidebar-graphic-art-image_1258-82968.png);
-  background-position: center center;
+  background-image: url("/img/pexels-pikx-by-panther-1547248.jpg");
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .workout .workout-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 11rem;
-  margin-left: 4rem;
+  place-items: center;
+  margin: 0 auto;
+  padding-top: 5rem;
 }
 
 .workout .workout-content .content-box {
   width: 100%;
   margin: 0 auto;
-  vertical-align: middle;
+  padding-top: 10rem;
 }
 
 .workout .workout-content .content-box h2 {
@@ -36,24 +36,26 @@
   color: #ffffff;
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   line-height: 3.5rem;
+  width: 30%;
 }
 
 .workout .workout-content .content-box .button {
   font-family: "Poppins", sans-serif;
-  background: #000000;
+  background-color: #000000;
+  border-color: #000000;
   padding: 1rem 3rem;
   text-decoration: none;
   font-weight: 700;
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 
-.workout .workout-content .img-box img {
-  position: relative;
-  top: -140px;
-  right: 200px;
-  width: 850px;
+.workout .workout-content .content-box .button:hover {
+  background-color: rgba(61, 61, 61, 0.9);
+  border-color: rgba(61, 61, 61, 0.9);
+  color: rgba(255, 255, 255, 1);
 }
 
 footer {
@@ -64,7 +66,6 @@ footer {
 }
 
 footer .copyright {
-  width: 25%;
   margin: 0 auto;
 }
 
