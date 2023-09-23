@@ -4,7 +4,7 @@
 }
 
 .workout {
-  background-image: url("/img/pexels-pikx-by-panther-1547248.jpg");
+  background: url("/img/fitness-min.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 .workout .workout-content {
   place-items: center;
   margin: 0 auto;
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 
 .workout .workout-content .content-box {
@@ -38,7 +38,7 @@
   font-weight: 700;
   margin-bottom: 3.5rem;
   line-height: 3.5rem;
-  width: 30%;
+  max-width: 30%;
 }
 
 .workout .workout-content .content-box .button {
@@ -58,6 +58,83 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content .modal-container {
+  padding: 3rem;
+}
+
+.modal-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.modal-content #email {
+  width: 100%;
+  max-width: 1800px;
+  padding: 18px;
+  margin: 1.2rem auto;
+  box-sizing: border-box;
+  border: none;
+  background: #f1f1f1;
+}
+
+.modal-content .button {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  border-color: #000000;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 footer {
   font-family: "Poppins", sans-serif;
   background: #000000;
@@ -71,4 +148,109 @@ footer .copyright {
 
 footer .copyright p {
   text-align: center;
+}
+
+@media screen and (min-width: 300px) {
+  .workout {
+    min-height: 100vh;
+  }
+
+  .workout .workout-content .content-box {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    vertical-align: middle;
+  }
+  .workout .workout-content .content-box h1 {
+    font-size: 2rem;
+    max-width: 100%;
+    line-height: 3rem;
+  }
+
+  .workout .workout-content .content-box .button {
+    padding: 1rem 1rem;
+  }
+
+  footer .copyright p {
+    text-align: center;
+    font-size: 0.5em;
+  }
+
+  .modal-content .button {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .workout .workout-content .content-box {
+    padding-top: 10rem;
+    max-width: 80%;
+    margin: 0;
+  }
+
+  .workout .workout-content .content-box .button {
+    padding: 1rem 2rem;
+  }
+
+  footer .copyright p {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .workout .workout-content .content-box {
+    padding-top: 10rem;
+    max-width: 60%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .workout .workout-content .content-box {
+    padding-top: 10rem;
+    max-width: 60%;
+    margin: 0;
+  }
+
+  .workout .workout-content .content-box h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .workout .workout-content .content-box {
+    padding-top: 10rem;
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .workout .workout-content .content-box h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .workout .workout-content .content-box {
+    padding-top: 10rem;
+    max-width: 40%;
+    margin: 0;
+  }
+
+  .workout .workout-content .content-box h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .workout .workout-content .content-box {
+    padding-top: 13rem;
+    max-width: 40%;
+    margin: 0;
+  }
+
+  .workout .workout-content .content-box h1 {
+    line-height: 4rem;
+  }
 }
