@@ -25,7 +25,7 @@
 
 .workout .workout-content .content-box h2 {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 1rem;
   color: #000000;
   font-size: 1.3em;
@@ -71,49 +71,6 @@
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-.modal-content .modal-container {
-  padding: 3rem;
-}
-
-.modal-content p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.modal-content #email {
-  width: 100%;
-  max-width: 1800px;
-  padding: 18px;
-  margin: 1.2rem auto;
-  box-sizing: border-box;
-  border: none;
-  background: #f1f1f1;
-}
-
-.modal-content .button {
-  font-family: "Poppins", sans-serif;
-  background-color: #000000;
-  border-color: #000000;
-  padding: 1rem 3rem;
-  text-decoration: none;
-  font-weight: 700;
-  color: white;
-  transition: all 0.2s ease-in-out;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 1rem;
-}
-
 /* The Close Button */
 .close {
   color: #aaa;
@@ -133,6 +90,10 @@
   content: "";
   clear: both;
   display: table;
+}
+
+#mc_embed_signup h2 {
+  padding-top: 0.5rem !important;
 }
 
 footer {
